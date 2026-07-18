@@ -1,0 +1,45 @@
+:root {
+  --primary: #182033;
+  --primary-2: #A86B8B;
+  --accent: #D6A84F;
+  --accent-2: #F8EEF3;
+  --bg: #F7F5F8;
+  --surface: #FFFFFF;
+  --surface-2: #F2EEF4;
+  --text: #1F2937;
+  --muted: #6B7280;
+  --line: #E7E3EA;
+  --success: #16A34A;
+  --warning: #D97706;
+  --danger: #DC2626;
+  --info: #2563EB;
+  --shadow: 0 22px 60px rgba(24, 32, 51, .12);
+  --shadow-soft: 0 12px 28px rgba(24, 32, 51, .08);
+  --radius: 24px;
+  --radius-sm: 16px;
+  --sidebar: 302px;
+}
+
+[data-theme="mauve"] {
+  --primary: #182033; --primary-2: #A86B8B; --accent: #D6A84F; --accent-2: #F8EEF3;
+  --bg: #F7F5F8; --surface-2: #F2EEF4; --text: #1F2937; --muted: #6B7280; --line: #E7E3EA;
+}
+[data-theme="emerald"] {
+  --primary: #113B34; --primary-2: #2F8F75; --accent: #C9A45C; --accent-2: #EAF7F1;
+  --bg: #F5F8F6; --surface-2: #EAF4F0; --text: #172B28; --muted: #667A75; --line: #DDEBE7;
+}
+[data-theme="champagne"] {
+  --primary: #2E2A24; --primary-2: #B08A45; --accent: #E0B85C; --accent-2: #FFF3D9;
+  --bg: #FAF7EF; --surface-2: #F6EEDC; --text: #2E2A24; --muted: #7B6D5C; --line: #EADFC9;
+}
+[data-theme="royal"] {
+  --primary: #172554; --primary-2: #3758D8; --accent: #BFA76A; --accent-2: #EEF3FF;
+  --bg: #F7F8FC; --surface-2: #EEF3FF; --text: #182033; --muted: #61708A; --line: #DCE4F7;
+}
+[data-theme="cocoa"] {
+  --primary: #3B2B2F; --primary-2: #B46A7B; --accent: #D5A85E; --accent-2: #FFF1F3;
+  --bg: #FAF6F5; --surface-2: #F7EAEC; --text: #30262A; --muted: #79686D; --line: #ECDDE1;
+}
+
+/* Tempat menambah tema baru: cukup salin 1 blok [data-theme="..."] di atas
+   dengan nama & warna baru, lalu daftarkan di src/lib/schemas.js -> THEME_LIST */
