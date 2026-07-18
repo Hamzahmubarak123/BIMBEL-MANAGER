@@ -11,6 +11,7 @@ import './styles/variables.css';
 import './styles/layout.css';
 import './styles/components.css';
 import './styles/documents.css';
+import './styles/responsive.css'; // WAJIB paling terakhir — lihat catatan di dalam file ini
 
 import { checkLicense } from './lib/license.js';
 import { initClientProject } from './lib/supabaseClient.js';
