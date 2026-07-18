@@ -1,0 +1,85 @@
+/* ============================================================
+   RESPONSIVE.CSS
+   File ini SENGAJA diimpor PALING TERAKHIR di main.js (setelah
+   variables.css, layout.css, components.css, documents.css).
+   Ini penting: kalau file ini diimpor lebih awal, aturan di sini
+   bisa "kalah" oleh aturan dasar (non-media-query) yang letaknya
+   belakangan di file lain walau kondisi layar sudah cocok — karena
+   CSS memenangkan aturan berdasarkan urutan kemunculan saat tingkat
+   kekhususan selector-nya sama, bukan otomatis dimenangkan media
+   query. JANGAN pindahkan import file ini ke atas.
+   ============================================================ */
+
+@media (max-width: 1180px) {
+  .grid.kpi { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  .grid.two, .hero, .swotGrid, .ownerBrief, .healthLayout { grid-template-columns: minmax(0, 1fr) !important; }
+  .grid.three, .docControls { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  .grid.four, .strategyCards { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  .themePreviewGrid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  .snapshotGrid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  .healthRing { margin: auto; }
+}
+
+@media (max-width: 840px) {
+  .app { display: block !important; }
+  .sidebar { position: fixed !important; left: -100vw; width: min(302px, 86vw) !important; transition: .22s ease; }
+  .sidebar.open { left: 0 !important; }
+  .main { padding: 16px !important; overflow-x: hidden; }
+  .hamb { display: inline-flex !important; }
+  .topbar { align-items: flex-start !important; }
+  .actions { width: 100% !important; }
+  .actions .btn { flex: 1 1 auto !important; min-width: 0; }
+  .grid.kpi, .grid.forms, .grid.three, .grid.four, .docControls, .swotGrid,
+  .snapshotGrid, .strategyCards, .healthPills, .ownerBrief, .healthLayout {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+  .topTitle h1 { font-size: 22px !important; }
+  .heroTitle { font-size: 26px !important; }
+  .heroMetric { grid-template-columns: minmax(0, 1fr) !important; }
+  .docStage { justify-items: start !important; -webkit-overflow-scrolling: touch; }
+  .modal { border-radius: 20px !important; }
+  table { min-width: 760px; }
+}
+
+@media (max-width: 480px) {
+  html, body { overflow-x: hidden; }
+  .main { padding: 12px !important; }
+  .card { padding: 14px !important; border-radius: 18px !important; }
+  .kpiValue { font-size: 22px !important; }
+  .heroTitle { font-size: 22px !important; }
+  .healthRing { width: 128px !important; height: 128px !important; }
+  .healthInner { width: 88px !important; height: 88px !important; }
+  .healthInner strong { font-size: 24px !important; }
+  .btn { padding: 9px 12px !important; font-size: 13px !important; }
+  .cardHeader { flex-direction: column !important; align-items: stretch !important; }
+  .cardHeader > span.badge { align-self: flex-start; }
+  .brandText span { display: none; }
+  table { min-width: 640px; }
+}
+
+/* ---------- Angka/teks panjang tidak boleh mendorong layout melebar ---------- */
+.kpiValue, .healthInner strong, .strategyCard strong, .docSummary strong,
+.heroMetric b, .snapshotGrid .miniBox strong, .miniItem b {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+.kpiCard, .card, .miniBox, .healthPill, .strategyCard, .miniItem, .focusItem {
+  min-width: 0;
+}
+
+/* ---------- Tombol "Kembali ke Dashboard" ---------- */
+.backBtn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--primary);
+  font-size: 18px;
+  cursor: pointer;
+  flex: 0 0 auto;
+}
+.backBtn.show { display: inline-flex; }
