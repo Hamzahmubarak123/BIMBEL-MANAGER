@@ -9,7 +9,7 @@ Dibangun dari prototype single-file HTML, dipecah jadi project modular
 License Server terpusat (punya Hasilin) + 1 Supabase project data per klien.
 
 ---
-
+ 
 ## 1. Struktur Project
  
 ```
