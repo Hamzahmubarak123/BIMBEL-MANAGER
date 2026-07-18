@@ -55,6 +55,7 @@ window.showPage = function (page) {
   const p = PAGES.find((x) => x[0] === page) || PAGES[0];
   byId('pageTitle').textContent = p[1];
   byId('pageSubtitle').textContent = p[3];
+  byId('backBtn')?.classList.toggle('show', page !== 'dashboard');
   byId('sidebar')?.classList.remove('open');
   renderPage(page);
 };
