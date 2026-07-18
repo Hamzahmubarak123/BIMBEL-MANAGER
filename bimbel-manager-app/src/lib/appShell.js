@@ -21,6 +21,7 @@ export function renderAppShell(root) {
       <main class="main">
         <div class="topbar noPrint">
           <button class="btn hamb" id="hambBtn">☰</button>
+          <button class="backBtn" id="backBtn" onclick="showPage('dashboard')" aria-label="Kembali ke Dashboard" title="Kembali ke Dashboard">←</button>
           <div class="topTitle"><h1 id="pageTitle">Dashboard</h1><p id="pageSubtitle"></p></div>
           <div class="actions"><button class="btn soft" onclick="quickAdd('payments')">＋ Pembayaran</button><button class="btn soft" onclick="quickAdd('students')">＋ Siswa</button><button class="btn primary" onclick="showPage('documents')">Pusat Dokumen</button></div>
         </div>
