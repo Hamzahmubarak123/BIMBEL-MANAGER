@@ -7,7 +7,7 @@ pusat dokumen (invoice/kwitansi/laporan), dan role Owner + Admin Cabang.
 Dibangun dari prototype single-file HTML, dipecah jadi project modular
 (Vite + Supabase) dengan pola arsitektur yang sama dengan LesKu:
 License Server terpusat (punya Hasilin) + 1 Supabase project data per klien.
-
+ 
 ---
  
 ## 1. Struktur Project
