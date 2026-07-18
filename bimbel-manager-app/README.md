@@ -11,7 +11,7 @@ License Server terpusat (punya Hasilin) + 1 Supabase project data per klien.
 ---
 
 ## 1. Struktur Project
-
+ 
 ```
 src/
   main.js              Titik masuk: cek lisensi → login → muat data → tampilkan app
