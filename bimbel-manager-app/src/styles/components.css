@@ -129,18 +129,7 @@ tr:last-child td { border-bottom: 0; }
 .ownerBrief ul { margin: 10px 0 0; padding-left: 18px; }
 .ownerBrief li { margin: 6px 0; color: var(--text); font-size: 13px; }
 
-/* ---------- Responsive safety net ---------- */
-/* Angka rupiah/panjang tanpa spasi (mis. "Rp150.000.000") secara default
-   tidak bisa wrap oleh browser dan bisa memaksa layout melebar keluar
-   layar di HP. Class-class nilai besar berikut dipaksa boleh wrap. */
-.kpiValue, .healthInner strong, .strategyCard strong, .docSummary strong,
-.heroMetric b, .snapshotGrid .miniBox strong, .miniItem b {
-  overflow-wrap: break-word;
-  word-break: break-word;
-}
-.kpiCard, .card, .miniBox, .healthPill, .strategyCard, .miniItem, .focusItem {
-  min-width: 0;
-}
+/* ---------- Layar Lisensi & Login ---------- */
 .gateScreen { min-height: 100vh; display: grid; place-items: center; padding: 24px; }
 .gateCard { width: min(420px, 100%); background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 28px; }
 .gateCard h1 { font-size: 22px; margin: 0 0 6px; letter-spacing: -.6px; }
